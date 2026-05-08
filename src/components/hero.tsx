@@ -1,13 +1,9 @@
 "use client"
 
-import { Mail, ArrowDown, Sparkles } from "lucide-react"
+import { ArrowDown, Sparkles, ArrowRight } from "lucide-react"
 import { motion } from "framer-motion"
 import { TypeAnimation } from "react-type-animation"
 import Image from "next/image"
-
-const socialLinks = [
-  { icon: Mail, href: "mailto:Kzaeemkhan833@gmail.com", label: "Email" },
-]
 
 const stats = [
   { value: "5+", label: "Years Exp." },
@@ -61,32 +57,19 @@ export function Hero() {
             </motion.p>
 
             {/* CTA buttons */}
-            <motion.div {...fadeUp(0.52)} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
+            <motion.div {...fadeUp(0.52)} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <button
                 onClick={() => go("projects")}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-violet-600 text-white font-semibold text-base shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
               >
-                View My Work
+                View My Work <ArrowRight className="h-4 w-4" />
               </button>
-
-            </motion.div>
-
-            {/* Social icons */}
-            <motion.div {...fadeUp(0.62)} className="flex justify-center lg:justify-start gap-3">
-              {socialLinks.map(({ icon: Icon, href, label }, i) => (
-                <motion.a
-                  key={i}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={label}
-                  whileHover={{ scale: 1.12, y: -3 }}
-                  whileTap={{ scale: 0.93 }}
-                  className="w-12 h-12 rounded-2xl glass flex items-center justify-center text-muted-foreground hover:text-blue-600 hover:border-blue-400/60 transition-colors shadow-sm"
-                >
-                  <Icon className="h-5 w-5" />
-                </motion.a>
-              ))}
+              <a
+                href="mailto:Kzaeemkhan833@gmail.com"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl glass text-foreground font-semibold text-base hover:text-blue-600 hover:border-blue-400/50 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 shadow-sm"
+              >
+                Email Me
+              </a>
             </motion.div>
           </div>
 

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
@@ -36,9 +36,7 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-    nocache: true,
   },
-  themeColor: "#2563eb",
   openGraph: {
     title: "Zaeem Khan | Flutter Developer & UI/UX Designer",
     description:
@@ -53,12 +51,13 @@ export const metadata: Metadata = {
         alt: "Zaeem Khan Portfolio Preview",
       },
     ],
-    locale: "en",
+    locale: "en_US",
     type: "website",
   },
-  icons: {
-    icon: "/favicon.ico",
-  },
+}
+
+export const viewport: Viewport = {
+  themeColor: "#2563eb",
 }
 
 

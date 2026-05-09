@@ -2,7 +2,7 @@
 
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, MapPin, Phone, Send, Timer, CheckCircle2, XCircle, Star } from "lucide-react"
+import { Mail, MapPin, Phone, Send, CheckCircle2, XCircle, Star } from "lucide-react"
 import { motion } from "framer-motion"
 import { useState, useRef } from "react"
 

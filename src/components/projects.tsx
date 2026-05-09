@@ -124,7 +124,7 @@ export function Projects() {
                   {/* Image */}
                   <div className="relative h-56 overflow-hidden flex-shrink-0">
                     <Image
-                      src={project.image || "/placeholder.svg"}
+                      src={project.image}
                       alt={project.title}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500"

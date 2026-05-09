@@ -29,9 +29,9 @@ export const metadata: Metadata = {
     "Figma Designer",
     "Remote Flutter Developer"
   ],
-  metadataBase: new URL("https://iqraiqbalportfolio.vercel.app"), // Change if deploying to a different domain
+  metadataBase: new URL("https://zaeem-port-folio.vercel.app"),
   alternates: {
-    canonical: "https://iqraiqbalportfolio.vercel.app",
+    canonical: "https://zaeem-port-folio.vercel.app",
   },
   robots: {
     index: true,
@@ -43,11 +43,11 @@ export const metadata: Metadata = {
     title: "Zaeem Khan | Flutter Developer & UI/UX Designer",
     description:
       "Discover mobile apps crafted with Flutter and elegant UI/UX designs. Zaeem Khan is available for remote freelance and full-time opportunities.",
-    url: "https://iqraiqbalportfolio.vercel.app",
+    url: "https://zaeem-port-folio.vercel.app",
     siteName: "Zaeem Khan Portfolio",
     images: [
       {
-        url: "https://iqraiqbalportfolio.vercel.app/images/og-image.png",
+        url: "https://zaeem-port-folio.vercel.app/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Zaeem Khan Portfolio Preview",
